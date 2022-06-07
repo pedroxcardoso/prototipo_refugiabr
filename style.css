@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+
+
+:root{
+    --color-white: hsl(252, 30%, 100%);
+    --color-light: hsl(252, 30%, 95%);
+    --color-gray: hsl(252, 15%, 65%);
+    --color-primary: hsl(252, 75%, 60%);
+    --color-secundary: hsl(252, 100%, 90%);
+    --color-sucess: hsl(120, 95%, 65%);
+    --color-danger: hsl(0, 95%, 65%);
+    --color-dark: hsl(252, 30%, 17%);
+    --color-black: hsl(252, 30%, 10%);
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+}
+
+
+
+*, *::after, *::before{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--color-light);
+    transition: all 300ms ease;
+}
+
+
+
+.central-login{
+    position: sticky;
+    padding-top: 2%;
+    padding: 2%;
+    border-radius: var(--card-border-radius);
+    box-shadow: 0 0 0 0, 0 6px 12px rgb(34 34 34 / 20%);
+}
+
+.nav-bar h3{
+    color: var(--color-black);
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+.container h1{
+    color:black;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1.2rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background: var(--color-white);
+}
+
+
+
+.itens ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.2rem;
+}
+
+.itens .nav-link{
+    margin-left: 2rem;
+    list-style-type: none;
+    font-size: 1.2rem;
+    color:var(--color-black);
+}
+
+img{
+    height: 200px;
+    width: 300px;
+}
+
+.box{
+    width: 60%;
+    padding-bottom: 5rem;
+    transition: all 300ms ease;
+}
+
+.nav-link.active{
+   color: #000000;
+   border-bottom: 2px solid red;
+   font-weight: bold;
+   content: "";
+}
+
+.central-login {
+    margin-bottom: 0;
+    background-color: #fff;
+    transition: all 300ms ease;
+}
+
+.central-login h1{
+    padding-bottom: 0.5rem;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #6c757d;
+    padding-bottom: 0.5rem;
+}
+
+
+.lead a{
+    color:rgb(165, 183, 245);
+}
+
+.central-login p {
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.btn-primary1 {
+    display: inline-block;
+    padding: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 1.0rem;
+    background: var(--color-primary);
+    color: white;
+    width: 20%;
+    margin-right: 0.5rem;
+    border: solid 1px black;
+    transition: all 300ms ease;
+}
+.btn-primary2 {
+    display: inline-block;
+    padding: 0.8rem;
+    border: solid 1px black;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 1.0rem;
+    background: rgb(105, 105, 105);
+    color: white;
+    width: 20%;
+    margin-left: 0.5rem;
+    transition: all 300ms ease;
+}
+
+.btn-primary1:hover{
+    opacity: 0.5;
+    transition: all 300ms ease;
+}
+
+.btn-primary2:hover{
+    opacity: 0.5;
+    transition: all 300ms ease;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    color: black;
+}
+
+.contacts label{
+    font-size: 1.2rem;
+}
+
+.dark{
+    margin-left: 2rem;
+    border:none;
+    background: var(--color-white);
+    cursor:pointer;
+}
+
+.dark i{
+    font-size: 1.0rem;
+}
+
+.dark:hover{
+    transform: scale(1.1);
+    transition: all 300ms ease;
+}
+
+.dark-mode {
+    background-color: var(--color-black);
+    color: white;
+
+  }
+
+
+@media screen and (max-width: 592px){
+    
+    .box{
+        padding-top: 10rem;
+        width: 100%;
+    }
+
+    .nav-bar{
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        padding-right: 1rem;
+        width: 100%;
+    }
+
+
+    .container{
+        width: 96%;
+    }
+
+    main .container{
+        grid-template-columns: 5rem auto 30vw;
+        gap: 1rem;
+    }
+
+   
+    .buttons{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn-primary1{
+        width: 10rem;
+    }
+    .btn-primary2{
+        width: 10rem;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .box{
+        padding-top: 15rem;
+        width: 100%;
+    }
+
+    img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+/*=================ABOUT US=====================*/
+
