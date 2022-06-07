@@ -8,4 +8,4 @@ Foi feita uma função para a mudança do claro pro modo escuro.
 
 ![image](https://user-images.githubusercontent.com/103221067/172496345-f89ffc84-4aac-48e6-943d-7b92308f1c76.png)
 
-Foi criada uma função para que ao escrever o CPF no formulário ficasse no modelo "xxx.xxx.xxx-xx"
+Foi criada uma função para que ao escrever o CPF no formulário ficasse no modelo "xxx.xxx.xxx-xx" e que não pudesse haver outro caractere sem ser número.
